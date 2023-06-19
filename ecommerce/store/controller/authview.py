@@ -34,7 +34,6 @@ def loginpage(request):
             else:
                 messages.error(request, 'Invalid Username or Password')
                 return redirect('loginpage')
-
     return render(request, 'store/auth/login.html')
 
 
